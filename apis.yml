@@ -1,0 +1,72 @@
+aid: teamwork
+name: Teamwork.com
+description: >-
+  Teamwork.com is a project management and client work platform built for
+  client services, agencies, and professional services teams to manage
+  projects, tasks, time tracking, billing, resource planning, and
+  collaboration in one place. The platform provides product offerings
+  including Projects, Desk, Chat, Spaces, and CRM with deep integrations
+  across the client delivery lifecycle. Teamwork.com offers a comprehensive
+  REST API (v3) for the Projects product allowing programmatic access to
+  projects, tasks, time entries, milestones, people, and reporting, with
+  Bearer Token (OAuth 2.0) and HTTP Basic authentication.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Project Management
+  - Client Services
+  - Task Management
+  - Time Tracking
+  - Collaboration
+  - Professional Services Automation
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/teamwork/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: teamwork:projects-api-v3
+    name: Teamwork.com Projects API v3
+    description: >-
+      REST API for the Teamwork.com Projects product providing programmatic
+      access to projects, tasks, milestones, time entries, people, companies,
+      tags, and reporting. Authentication supports OAuth 2.0 Bearer Tokens
+      and HTTP Basic Auth using an API key. Base URL is region- and
+      site-specific (https://{site}.teamwork.com/projects/api/v3 for US
+      hosting, https://{site}.eu.teamwork.com/projects/api/v3 for EU).
+    humanURL: https://apidocs.teamwork.com/docs/teamwork/v3
+    baseURL: https://{site}.teamwork.com/projects/api/v3
+    tags:
+      - Project Management
+      - Tasks
+      - Time Tracking
+      - Milestones
+      - Reporting
+    properties:
+      - type: Documentation
+        url: https://apidocs.teamwork.com/docs/teamwork/v3
+      - type: Getting Started
+        url: https://apidocs.teamwork.com/guides/teamwork/getting-started-with-the-teamwork-com-api
+      - type: Authentication
+        url: https://apidocs.teamwork.com/guides/teamwork/authentication
+      - type: OpenAPI
+        url: https://apidocs.teamwork.com/api/oas/download?slug=teamwork&api_version=v3
+
+common:
+  - type: Website
+    url: https://www.teamwork.com
+  - type: Documentation
+    url: https://apidocs.teamwork.com
+  - type: Pricing
+    url: https://www.teamwork.com/pricing
+  - type: Sign Up
+    url: https://www.teamwork.com/signup
+  - type: Support
+    url: https://support.teamwork.com
+  - type: Status
+    url: https://status.teamwork.com
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/teamwork-com
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
