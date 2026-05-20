@@ -53,6 +53,8 @@ apis:
         url: https://apidocs.teamwork.com/api/oas/download?slug=teamwork&api_version=v3
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/teamwork
   - type: Website
     url: https://www.teamwork.com
   - type: Documentation
