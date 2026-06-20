@@ -11,7 +11,7 @@ description: >-
   projects, tasks, time entries, milestones, people, and reporting, with
   Bearer Token (OAuth 2.0) and HTTP Basic authentication.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Project Management
   - Client Services
