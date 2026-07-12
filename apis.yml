@@ -53,6 +53,10 @@ apis:
         url: https://apidocs.teamwork.com/api/oas/download?slug=teamwork&api_version=v3
 
 common:
+  - type: DomainSecurity
+    url: security/teamwork-domain-security.yml
+  - type: Authentication
+    url: authentication/teamwork-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/teamwork
   - type: Website
@@ -69,6 +73,8 @@ common:
     url: https://status.teamwork.com
   - type: LinkedIn
     url: https://www.linkedin.com/company/teamwork-com
+  - url: https://www.teamwork.com/blog/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
