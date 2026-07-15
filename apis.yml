@@ -53,6 +53,8 @@ apis:
         url: https://apidocs.teamwork.com/api/oas/download?slug=teamwork&api_version=v3
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/teamwork-agentic-access.yml
   - type: DomainSecurity
     url: security/teamwork-domain-security.yml
   - type: Authentication
