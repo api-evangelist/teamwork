@@ -1,0 +1,64 @@
+openapi: 3.1.0
+info:
+  title: Teamwork.com Projects API v3 Activity API
+  version: 3.0.0
+  description: 'REST API for the Teamwork.com Projects product providing programmatic
+
+    access to projects, tasks, milestones, time entries, people, and
+
+    reporting. Authentication supports OAuth 2.0 Bearer Tokens and HTTP
+
+    Basic Auth using an API key.
+
+    '
+  contact:
+    name: Teamwork.com
+    url: https://apidocs.teamwork.com/docs/teamwork/v3
+servers:
+- url: https://{site}.teamwork.com
+  description: US site
+  variables:
+    site:
+      default: example
+      description: Your Teamwork site subdomain
+- url: https://{site}.eu.teamwork.com
+  description: EU site
+  variables:
+    site:
+      default: example
+      description: Your Teamwork EU site subdomain
+security:
+- bearerAuth: []
+- basicAuth: []
+tags:
+- name: Activity
+paths:
+  /projects/api/v3/activity/{activityLogId}.json:
+    delete:
+      summary: Delete activity log entry
+      operationId: deleteActivity
+      tags:
+      - Activity
+      parameters:
+      - name: activityLogId
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '204':
+          description: Deleted
+        '400':
+          description: Bad request
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+    basicAuth:
+      type: http
+      scheme: basic
