@@ -1,0 +1,35 @@
+generated: '2026-07-28'
+method: probed
+source: https://teamwork.com/.well-known/agent.json
+description: 'A2A Agent Card observed at /.well-known/agent.json on teamwork.com. Grade is measured against
+  the A2A 1.0.0 AgentCard object: ''conformant'' passes every structural check, ''near-conformant'' is
+  correctly shaped but omits optional fields, ''flavored'' fails a hard check and is an agent card in
+  spirit rather than in schema. Provider-published by construction — served from the provider''s own host;
+  nothing here is derived or generated.'
+discovery:
+  path: /.well-known/agent.json
+  canonical: false
+  host: teamwork.com
+conformance:
+  spec: A2A 1.0.0
+  grade: flavored
+  protocol_version: null
+  preferred_transport: null
+  deviations:
+  - no-protocolVersion
+  - no-preferredTransport
+card:
+  name: Teamwork.com
+  description: The Teamwork.com official MCP server helps teams efficiently manage client projects with
+    AI.
+  url: https://mcp.ai.teamwork.com/
+  version: 1.25.4
+  documentation_url: https://github.com/Teamwork/mcp
+  skills: 4
+  file: teamwork-agent-card.json
+x-evidence:
+  fetched: '2026-07-28'
+  url: https://teamwork.com/.well-known/agent.json
+  http_status: 200
+  content_type: application/json
+  note: Verbatim body saved alongside this manifest. No field inferred.

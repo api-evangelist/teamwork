@@ -53,6 +53,10 @@ apis:
         url: https://apidocs.teamwork.com/api/oas/download?slug=teamwork&api_version=v3
 
 common:
+  - type: AgentCard
+    url: a2a/teamwork-a2a.yml
+    name: A2A Agent Card
+    description: Agent Card served at /.well-known/agent.json (flavored against A2A 1.0.0).
   - type: AgenticAccess
     url: agentic-access/teamwork-agentic-access.yml
   - type: DomainSecurity
