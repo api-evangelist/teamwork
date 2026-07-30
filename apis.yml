@@ -25,33 +25,54 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: teamwork:projects-api-v3
-    name: Teamwork.com Projects API v3
-    description: >-
-      REST API for the Teamwork.com Projects product providing programmatic
-      access to projects, tasks, milestones, time entries, people, companies,
-      tags, and reporting. Authentication supports OAuth 2.0 Bearer Tokens
-      and HTTP Basic Auth using an API key. Base URL is region- and
-      site-specific (https://{site}.teamwork.com/projects/api/v3 for US
-      hosting, https://{site}.eu.teamwork.com/projects/api/v3 for EU).
-    humanURL: https://apidocs.teamwork.com/docs/teamwork/v3
-    baseURL: https://{site}.teamwork.com/projects/api/v3
-    tags:
-      - Project Management
-      - Tasks
-      - Time Tracking
-      - Milestones
-      - Reporting
-    properties:
-      - type: Documentation
-        url: https://apidocs.teamwork.com/docs/teamwork/v3
-      - type: GettingStarted
-        url: https://apidocs.teamwork.com/guides/teamwork/getting-started-with-the-teamwork-com-api
-      - type: Authentication
-        url: https://apidocs.teamwork.com/guides/teamwork/authentication
-      - type: OpenAPI
-        url: https://apidocs.teamwork.com/api/oas/download?slug=teamwork&api_version=v3
-
+- aid: teamwork:teamwork-activity-api
+  name: Teamwork.com Activity API
+  description: The Activity API from Teamwork.com — 1 operation(s) for activity.
+  humanURL: https://apidocs.teamwork.com/docs/teamwork/v3
+  baseURL: https://{site}.teamwork.com/projects/api/v3
+  tags:
+  - Activity
+  properties:
+  - type: OpenAPI
+    url: openapi/teamwork-activity-api-openapi.yml
+  - type: Documentation
+    url: https://apidocs.teamwork.com/docs/teamwork/v3
+  - type: GettingStarted
+    url: https://apidocs.teamwork.com/guides/teamwork/getting-started-with-the-teamwork-com-api
+  - type: Authentication
+    url: https://apidocs.teamwork.com/guides/teamwork/authentication
+- aid: teamwork:teamwork-projects-api
+  name: Teamwork.com Projects API
+  description: The Projects API from Teamwork.com — 1 operation(s) for projects.
+  humanURL: https://apidocs.teamwork.com/docs/teamwork/v3
+  baseURL: https://{site}.teamwork.com/projects/api/v3
+  tags:
+  - Projects
+  properties:
+  - type: OpenAPI
+    url: openapi/teamwork-projects-api-openapi.yml
+  - type: Documentation
+    url: https://apidocs.teamwork.com/docs/teamwork/v3
+  - type: GettingStarted
+    url: https://apidocs.teamwork.com/guides/teamwork/getting-started-with-the-teamwork-com-api
+  - type: Authentication
+    url: https://apidocs.teamwork.com/guides/teamwork/authentication
+- aid: teamwork:teamwork-tasks-api
+  name: Teamwork.com Tasks API
+  description: The Tasks API from Teamwork.com — 1 operation(s) for tasks.
+  humanURL: https://apidocs.teamwork.com/docs/teamwork/v3
+  baseURL: https://{site}.teamwork.com/projects/api/v3
+  tags:
+  - Tasks
+  properties:
+  - type: OpenAPI
+    url: openapi/teamwork-tasks-api-openapi.yml
+  - type: Documentation
+    url: https://apidocs.teamwork.com/docs/teamwork/v3
+  - type: GettingStarted
+    url: https://apidocs.teamwork.com/guides/teamwork/getting-started-with-the-teamwork-com-api
+  - type: Authentication
+    url: https://apidocs.teamwork.com/guides/teamwork/authentication
 common:
   - type: AgentCard
     url: a2a/teamwork-a2a.yml
