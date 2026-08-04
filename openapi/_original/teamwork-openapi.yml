@@ -1,0 +1,136 @@
+openapi: 3.1.0
+info:
+  title: Teamwork.com Projects API v3
+  version: "3.0.0"
+  description: |
+    REST API for the Teamwork.com Projects product providing programmatic
+    access to projects, tasks, milestones, time entries, people, and
+    reporting. Authentication supports OAuth 2.0 Bearer Tokens and HTTP
+    Basic Auth using an API key.
+  contact:
+    name: Teamwork.com
+    url: https://apidocs.teamwork.com/docs/teamwork/v3
+servers:
+  - url: https://{site}.teamwork.com
+    description: US site
+    variables:
+      site:
+        default: example
+        description: Your Teamwork site subdomain
+  - url: https://{site}.eu.teamwork.com
+    description: EU site
+    variables:
+      site:
+        default: example
+        description: Your Teamwork EU site subdomain
+security:
+  - bearerAuth: []
+  - basicAuth: []
+paths:
+  /projects/api/v3/projects.json:
+    get:
+      summary: List projects
+      description: Retrieves all projects for the provided filters. Only the projects that the logged-in user can access will be returned.
+      operationId: listProjects
+      tags:
+        - Projects
+      parameters:
+        - name: page
+          in: query
+          schema:
+            type: integer
+        - name: pageSize
+          in: query
+          schema:
+            type: integer
+        - name: orderBy
+          in: query
+          schema:
+            type: string
+        - name: orderMode
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Projects retrieved
+        "400":
+          description: Bad request
+        "403":
+          description: Forbidden
+        "404":
+          description: Not found
+  /projects/api/v3/activity/{activityLogId}.json:
+    delete:
+      summary: Delete activity log entry
+      operationId: deleteActivity
+      tags:
+        - Activity
+      parameters:
+        - name: activityLogId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Deleted
+        "400":
+          description: Bad request
+        "403":
+          description: Forbidden
+        "404":
+          description: Not found
+  /projects/api/v3/me/personaltasks.json:
+    get:
+      summary: List personal tasks
+      description: Returns the personal tasks for the logged-in user.
+      operationId: listPersonalTasks
+      tags:
+        - Tasks
+      parameters:
+        - name: taskFilter
+          in: query
+          schema:
+            type: string
+        - name: page
+          in: query
+          schema:
+            type: integer
+        - name: pageSize
+          in: query
+          schema:
+            type: integer
+        - name: orderBy
+          in: query
+          schema:
+            type: string
+        - name: orderMode
+          in: query
+          schema:
+            type: string
+        - name: include
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Tasks retrieved
+        "400":
+          description: Bad request
+        "403":
+          description: Forbidden
+        "404":
+          description: Not found
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+    basicAuth:
+      type: http
+      scheme: basic
+tags:
+  - name: Projects
+  - name: Tasks
+  - name: Activity

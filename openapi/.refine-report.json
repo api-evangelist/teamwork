@@ -1,0 +1,18 @@
+{
+  "provider": "teamwork",
+  "sources": [
+    "teamwork-activity-api-openapi.yml",
+    "teamwork-projects-api-openapi.yml",
+    "teamwork-tasks-api-openapi.yml"
+  ],
+  "outputs": [
+    "teamwork-activity-api-openapi.yml",
+    "teamwork-projects-api-openapi.yml",
+    "teamwork-tasks-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
