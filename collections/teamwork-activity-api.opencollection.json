@@ -1,0 +1,42 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Teamwork.com Projects API v3 Activity API",
+    "version": "3.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Activity",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Delete activity log entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://{site}.teamwork.com/projects/api/v3/activity/:activityLogId.json",
+            "params": [
+              {
+                "name": "activityLogId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete activity log entry"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
