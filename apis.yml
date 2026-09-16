@@ -131,6 +131,8 @@ common:
     url: https://www.linkedin.com/company/teamwork-com
   - url: https://www.teamwork.com/blog/
     type: Blog
+  - type: Contact
+    url: mailto:support@teamwork.com
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
