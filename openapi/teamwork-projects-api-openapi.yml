@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Teamwork.com API v3 Activity Projects API
+  title: Teamwork.com API v3 Projects API
   version: 3.0.0
   description: 'REST API for the Teamwork.com Projects product providing programmatic
 
@@ -8,9 +8,7 @@ info:
 
     reporting. Authentication supports OAuth 2.0 Bearer Tokens and HTTP
 
-    Basic Auth using an API key.
-
-    '
+    Basic Auth using an API key.'
   contact:
     name: Teamwork.com
     url: https://apidocs.teamwork.com/docs/teamwork/v3
