@@ -104,6 +104,9 @@ apis:
   - type: Authentication
     url: https://apidocs.teamwork.com/guides/teamwork/authentication
 common:
+  - type: CapabilityMap
+    url: capabilities/teamwork-capability-edges.yml
+    name: Teamwork.com Business Capability Map
   - type: AgentCard
     url: a2a/teamwork-a2a.yml
     name: A2A Agent Card

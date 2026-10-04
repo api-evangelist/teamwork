@@ -1,0 +1,34 @@
+slug: teamwork
+provider: Teamwork.com
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 2
+edges:
+- tag: Projects
+  spec_file: teamwork-projects-api-openapi.yml
+  capability_id: BC-900.30
+  capability_id_l1: BC-900
+  capability_name: Project Management
+  confidence: 0.85
+  evidence: GET /projects/api/v3/projects.json 'List projects'; 'REST API for the Teamwork.com Projects
+    product providing programmatic access to projects, tasks, milestones, time entries'
+  reason: Exposes the project entity of a project management platform, directly supporting project execution,
+    planning and tracking.
+- tag: Tasks
+  spec_file: teamwork-tasks-api-openapi.yml
+  capability_id: BC-900.30
+  capability_id_l1: BC-900
+  capability_name: Project Management
+  confidence: 0.72
+  evidence: GET /projects/api/v3/me/personaltasks.json 'List personal tasks'
+  reason: Task listing within a project management product supports project execution and tracking; sub-capability
+    inferred from the Projects product context, though the single personal-tasks endpoint is thin.
