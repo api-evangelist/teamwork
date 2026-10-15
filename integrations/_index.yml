@@ -95,7 +95,7 @@
     other_apps:
     - teamwork-crm
     - teamwork-desk
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: teamwork-pipedream
   label: Pipedream
@@ -121,5 +121,5 @@
     actions: true
     sources: true
     builder: Pipedream repo (component)
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
