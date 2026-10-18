@@ -151,7 +151,7 @@
     - alpha
     in_cloud: true
     builder: unknown (community connector; contributor not in the record)
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: teamwork-fivetran
   label: Fivetran
@@ -177,7 +177,7 @@
     - connectors/applications/teamwork
     vendor_link: https://www.teamwork.com/
     builder: Fivetran
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: teamwork-meltano
   label: Meltano
@@ -206,7 +206,7 @@
     quality:
     - unknown
     builder: 'community (Meltano Hub variant maintainers: immuta)'
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: teamwork-google-workspace-own
   label: Google Workspace (own)
