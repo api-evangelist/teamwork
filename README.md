@@ -1,4 +1,4 @@
-# Teamwork.com (teamwork)
+# Teamwork.com
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,64 +66,105 @@
 
 Teamwork.com is a project management and client work platform built for client services, agencies, and professional services teams to manage projects, tasks, time tracking, billing, resource planning, and collaboration in one place. The platform provides product offerings including Projects, Desk, Chat, Spaces, and CRM with deep integrations across the client delivery lifecycle. Teamwork.com offers a comprehensive REST API (v3) for the Projects product allowing programmatic access to projects, tasks, time entries, milestones, people, and reporting, with Bearer Token (OAuth 2.0) and HTTP Basic authentication.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/teamwork/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/teamwork/refs/heads/main/apis.yml)
+**Areas:** Project Management · Client Services · Task Management · Time Tracking · Collaboration · Professional Services Automation · A2A
 
-## Scope
+## Teamwork.com on APIs.io
 
-- **Type:** Index
+Everything profiled for Teamwork.com is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/teamwork/](https://apis.io/providers/teamwork/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (3)
 
-- Project Management
-- Client Services
-- Task Management
-- Time Tracking
-- Collaboration
-- Professional Services Automation
+- [Teamwork.com Activity API](https://apis.io/apis/teamwork/teamwork-activity-api/) — The Activity API from Teamwork.com — 1 operation(s) for activity.
+- [Teamwork.com Projects API](https://apis.io/apis/teamwork/teamwork-projects-api/) — The Projects API from Teamwork.com — 1 operation(s) for projects.
+- [Teamwork.com Tasks API](https://apis.io/apis/teamwork/teamwork-tasks-api/) — The Tasks API from Teamwork.com — 1 operation(s) for tasks.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-11
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Teamwork.com Projects API v3
+Which operations an agent can call, which act, and which need a human in the loop.
 
-REST API for the Teamwork.com Projects product providing programmatic access to projects, tasks, milestones, time entries, people, companies, tags, and reporting. Authentication supports OAuth 2.0 Bearer Tokens and HTTP Basic Auth using an API key. Base URL is region- and site-specific (https://{site}.teamwork.com/projects/api/v3 for US hosting, https://{site}.eu.teamwork.com/projects/api/v3 for EU).
+- [Teamwork Agentic Access](https://apis.io/agentic-access/teamwork/teamwork-agentic-access/)
 
-- **Human URL:** [https://apidocs.teamwork.com/docs/teamwork/v3](https://apidocs.teamwork.com/docs/teamwork/v3)
-- **Base URL:** `https://{site}.teamwork.com/projects/api/v3`
+#### Collections (4)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Project Management
-- Tasks
-- Time Tracking
-- Milestones
-- Reporting
+- [Teamwork.com Projects API v3](https://apis.io/collections/teamwork/open-teamwork/)
+- [Teamwork.com Projects API v3 Activity API](https://apis.io/collections/teamwork/open-teamwork-activity-api/)
+- [Teamwork.com API v3 Activity Projects API](https://apis.io/collections/teamwork/open-teamwork-projects-api/)
+- [Teamwork.com Projects API v3 Activity Tasks API](https://apis.io/collections/teamwork/open-teamwork-tasks-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://apidocs.teamwork.com/docs/teamwork/v3)
-- [Getting Started](https://apidocs.teamwork.com/guides/teamwork/getting-started-with-the-teamwork-com-api)
-- [Authentication](https://apidocs.teamwork.com/guides/teamwork/authentication)
-- [OpenAPI](https://apidocs.teamwork.com/api/oas/download?slug=teamwork&api_version=v3) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/teamwork.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/teamwork.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Teamwork Authentication](https://apis.io/security/teamwork/teamwork-authentication/)
+- [Teamwork Domain Security](https://apis.io/security/teamwork/teamwork-domain-security/)
 
-- [GitHub Organization](https://github.com/teamwork)
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.teamwork.com)
 - [Documentation](https://apidocs.teamwork.com)
 - [Pricing](https://www.teamwork.com/pricing)
-- [Sign Up](https://www.teamwork.com/signup)
 - [Support](https://support.teamwork.com)
-- [Status Page](https://status.teamwork.com)
-- [LinkedIn](https://www.linkedin.com/company/teamwork-com)
+- [Blog](https://www.teamwork.com/blog/)
+- [GitHub](https://github.com/teamwork)
+- [Status](https://status.teamwork.com)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 33.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 50.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 40.5 |
+| Access clarity | 23.7 |
+
+**Agent readiness 18.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | flavored (partial credit) |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/teamwork/](https://apis.io/providers/teamwork/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Teamwork.com: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/teamwork/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
